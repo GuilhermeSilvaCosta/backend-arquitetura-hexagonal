@@ -6,6 +6,10 @@ class InvertPassword implements EncryptProvider {
   cripto(password: string): string {
     return password.split('').reverse().join('');
   }
+
+  compare(password: string, encryptedPassword: string): boolean {
+    return this.cripto(password) === encryptedPassword;
+  }
 }
 
 export default new InvertPassword();

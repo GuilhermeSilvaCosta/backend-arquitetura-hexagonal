@@ -1,5 +1,7 @@
 const Errors = {
   USER_ALREADY_EXISTS: 'USER_ALREADY_EXISTS',
+  USER_NOT_EXISTS: 'USER_NOT_EXISTS',
+  INCORRECT_PASSWORD: 'INCORRECT_PASSWORD',
 } as const;
 
 export default Errors;
